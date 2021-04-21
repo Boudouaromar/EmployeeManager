@@ -18,15 +18,19 @@ public class EmployeeService {
         employee.setEmployeeCode(UUID.randomUUID().toString());
         return employeeRepository.save(employee);
     }
+
     public List<Employee> findAllEmployees(){
         return employeeRepository.findAll();
     }
+
     public Employee findEmployeeById(Long id){
         return employeeRepository.findEmployeeById(id).orElseThrow(()->new UserNotFoundException("user by id "+id+"was not found"));
     }
+
     public Employee updateEmployee(Employee employee){
         return employeeRepository.save(employee);
     }
+
     public void deleteEmployee(Long id){
         employeeRepository.deleteEmployeeById(id);
     }
