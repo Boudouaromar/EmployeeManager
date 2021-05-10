@@ -1,4 +1,4 @@
-package com.appdemo.employeemanager;
+package com.appdemo.employeemanager.Exceptions;
 
 public class UserNotFoundException extends RuntimeException {
     public UserNotFoundException(String message) {

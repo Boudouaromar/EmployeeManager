@@ -1,6 +1,6 @@
 package com.appdemo.employeemanager.service;
 
-import com.appdemo.employeemanager.UserNotFoundException;
+import com.appdemo.employeemanager.Exceptions.UserNotFoundException;
 import com.appdemo.employeemanager.model.Employee;
 import com.appdemo.employeemanager.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
