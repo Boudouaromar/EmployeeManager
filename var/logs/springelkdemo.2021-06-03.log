@@ -1,0 +1,622 @@
+[2021-06-03 22:04:18.562] [omar-desktop] [main] INFO c.a.e.EmployeemanagerApplication@logStarting:55 - Starting EmployeemanagerApplication using Java 11.0.11 on omar-desktop with PID 39023 (/home/omar/IdeaProjects/EmployeeManager/target/classes started by omar in /home/omar/IdeaProjects/EmployeeManager)
+[2021-06-03 22:04:18.577] [omar-desktop] [main] INFO c.a.e.EmployeemanagerApplication@logStartupProfileInfo:675 - No active profile set, falling back to default profiles: default
+[2021-06-03 22:04:20.832] [omar-desktop] [main] INFO o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn:128 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-06-03 22:04:20.898] [omar-desktop] [main] INFO o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn:188 - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+[2021-06-03 22:04:21.629] [omar-desktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8080 (http)
+[2021-06-03 22:04:21.646] [omar-desktop] [main] INFO o.a.coyote.http11.Http11NioProtocol@log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2021-06-03 22:04:21.647] [omar-desktop] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2021-06-03 22:04:21.648] [omar-desktop] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[2021-06-03 22:04:21.730] [omar-desktop] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2021-06-03 22:04:21.730] [omar-desktop] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:289 - Root WebApplicationContext: initialization completed in 2945 ms
+[2021-06-03 22:04:22.104] [omar-desktop] [main] DEBUG o.h.jpa.internal.util.LogHelper@logPersistenceUnitInformation:102 - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/home/omar/IdeaProjects/EmployeeManager/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.appdemo.employeemanager.model.Employee]
+	Mapping files names []
+	Properties []
+[2021-06-03 22:04:22.130] [omar-desktop] [main] DEBUG o.h.i.internal.IntegratorServiceImpl@addIntegrator:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[2021-06-03 22:04:22.140] [omar-desktop] [main] DEBUG o.h.i.internal.IntegratorServiceImpl@addIntegrator:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[2021-06-03 22:04:22.147] [omar-desktop] [main] DEBUG o.h.i.internal.IntegratorServiceImpl@addIntegrator:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[2021-06-03 22:04:22.162] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+[2021-06-03 22:04:22.170] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+[2021-06-03 22:04:22.175] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+[2021-06-03 22:04:22.181] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+[2021-06-03 22:04:22.186] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+[2021-06-03 22:04:22.191] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+[2021-06-03 22:04:22.193] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+[2021-06-03 22:04:22.203] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+[2021-06-03 22:04:22.204] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+[2021-06-03 22:04:22.206] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+[2021-06-03 22:04:22.207] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+[2021-06-03 22:04:22.209] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+[2021-06-03 22:04:22.211] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+[2021-06-03 22:04:22.213] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+[2021-06-03 22:04:22.214] [omar-desktop] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl@registerStrategyImplementor:85 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+[2021-06-03 22:04:22.273] [omar-desktop] [main] INFO org.hibernate.Version@logVersion:44 - HHH000412: Hibernate ORM core version 5.4.30.Final
+[2021-06-03 22:04:22.276] [omar-desktop] [main] DEBUG org.hibernate.cfg.Environment@<clinit>:199 - HHH000206: hibernate.properties not found
+[2021-06-03 22:04:22.552] [omar-desktop] [main] DEBUG o.h.service.spi.ServiceBinding@setService:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[2021-06-03 22:04:22.568] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+[2021-06-03 22:04:22.586] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+[2021-06-03 22:04:22.588] [omar-desktop] [main] DEBUG o.h.c.i.RegionFactoryInitiator@resolveRegionFactory:118 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[2021-06-03 22:04:22.589] [omar-desktop] [main] DEBUG o.h.c.i.RegionFactoryInitiator@initiateService:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[2021-06-03 22:04:22.611] [omar-desktop] [main] INFO o.h.annotations.common.Version@<clinit>:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-06-03 22:04:22.671] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@9f9146d
+[2021-06-03 22:04:22.672] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@9f9146d
+[2021-06-03 22:04:22.672] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@9f9146d
+[2021-06-03 22:04:22.673] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@21c75084
+[2021-06-03 22:04:22.674] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@6d815fb7
+[2021-06-03 22:04:22.675] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration yes_no -> org.hibernate.type.YesNoType@6d0114c0
+[2021-06-03 22:04:22.677] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration byte -> org.hibernate.type.ByteType@2f86f9cf
+[2021-06-03 22:04:22.678] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration byte -> org.hibernate.type.ByteType@2f86f9cf
+[2021-06-03 22:04:22.678] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@2f86f9cf
+[2021-06-03 22:04:22.680] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration character -> org.hibernate.type.CharacterType@6dded900
+[2021-06-03 22:04:22.680] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration char -> org.hibernate.type.CharacterType@6dded900
+[2021-06-03 22:04:22.680] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6dded900
+[2021-06-03 22:04:22.682] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration short -> org.hibernate.type.ShortType@60c96eb4
+[2021-06-03 22:04:22.682] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration short -> org.hibernate.type.ShortType@60c96eb4
+[2021-06-03 22:04:22.683] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@60c96eb4
+[2021-06-03 22:04:22.692] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration integer -> org.hibernate.type.IntegerType@2b3f7704
+[2021-06-03 22:04:22.693] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration int -> org.hibernate.type.IntegerType@2b3f7704
+[2021-06-03 22:04:22.693] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@2b3f7704
+[2021-06-03 22:04:22.695] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration long -> org.hibernate.type.LongType@3b57f915
+[2021-06-03 22:04:22.701] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration long -> org.hibernate.type.LongType@3b57f915
+[2021-06-03 22:04:22.701] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@3b57f915
+[2021-06-03 22:04:22.702] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration float -> org.hibernate.type.FloatType@6aad919c
+[2021-06-03 22:04:22.703] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration float -> org.hibernate.type.FloatType@6aad919c
+[2021-06-03 22:04:22.703] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@6aad919c
+[2021-06-03 22:04:22.704] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration double -> org.hibernate.type.DoubleType@66298fe9
+[2021-06-03 22:04:22.705] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration double -> org.hibernate.type.DoubleType@66298fe9
+[2021-06-03 22:04:22.705] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@66298fe9
+[2021-06-03 22:04:22.706] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7bb4ed71
+[2021-06-03 22:04:22.707] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7bb4ed71
+[2021-06-03 22:04:22.708] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@15e08615
+[2021-06-03 22:04:22.709] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@15e08615
+[2021-06-03 22:04:22.711] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration string -> org.hibernate.type.StringType@bd4ee01
+[2021-06-03 22:04:22.712] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.lang.String -> org.hibernate.type.StringType@bd4ee01
+[2021-06-03 22:04:22.712] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@69e2fe3b
+[2021-06-03 22:04:22.713] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@22c8ee48
+[2021-06-03 22:04:22.715] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration url -> org.hibernate.type.UrlType@6e5f5478
+[2021-06-03 22:04:22.715] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6e5f5478
+[2021-06-03 22:04:22.716] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration Duration -> org.hibernate.type.DurationType@2b7774d5
+[2021-06-03 22:04:22.717] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@2b7774d5
+[2021-06-03 22:04:22.718] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration Instant -> org.hibernate.type.InstantType@21090c88
+[2021-06-03 22:04:22.719] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@21090c88
+[2021-06-03 22:04:22.720] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@3ed7dd70
+[2021-06-03 22:04:22.721] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@3ed7dd70
+[2021-06-03 22:04:22.722] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@579846cc
+[2021-06-03 22:04:22.723] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@579846cc
+[2021-06-03 22:04:22.724] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3dde5f38
+[2021-06-03 22:04:22.733] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3dde5f38
+[2021-06-03 22:04:22.734] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1a536164
+[2021-06-03 22:04:22.735] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1a536164
+[2021-06-03 22:04:22.736] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@fcf9525
+[2021-06-03 22:04:22.736] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@fcf9525
+[2021-06-03 22:04:22.738] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@67c21bf
+[2021-06-03 22:04:22.739] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@67c21bf
+[2021-06-03 22:04:22.741] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration date -> org.hibernate.type.DateType@77b71c9
+[2021-06-03 22:04:22.741] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@77b71c9
+[2021-06-03 22:04:22.743] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration time -> org.hibernate.type.TimeType@6e93b0e7
+[2021-06-03 22:04:22.752] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@6e93b0e7
+[2021-06-03 22:04:22.754] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration timestamp -> org.hibernate.type.TimestampType@a9e8da1
+[2021-06-03 22:04:22.755] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@a9e8da1
+[2021-06-03 22:04:22.755] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@a9e8da1
+[2021-06-03 22:04:22.756] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4d290757
+[2021-06-03 22:04:22.758] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration calendar -> org.hibernate.type.CalendarType@5e24592e
+[2021-06-03 22:04:22.758] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@5e24592e
+[2021-06-03 22:04:22.759] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@5e24592e
+[2021-06-03 22:04:22.760] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2fc7fa6e
+[2021-06-03 22:04:22.761] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@30cafd13
+[2021-06-03 22:04:22.774] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration locale -> org.hibernate.type.LocaleType@34f23816
+[2021-06-03 22:04:22.774] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@34f23816
+[2021-06-03 22:04:22.776] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration currency -> org.hibernate.type.CurrencyType@6f0c45f4
+[2021-06-03 22:04:22.776] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6f0c45f4
+[2021-06-03 22:04:22.777] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@3335afcf
+[2021-06-03 22:04:22.778] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@3335afcf
+[2021-06-03 22:04:22.780] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration class -> org.hibernate.type.ClassType@5a899811
+[2021-06-03 22:04:22.785] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@5a899811
+[2021-06-03 22:04:22.786] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@6182ffef
+[2021-06-03 22:04:22.787] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@6182ffef
+[2021-06-03 22:04:22.789] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@4656fcc5
+[2021-06-03 22:04:22.792] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration binary -> org.hibernate.type.BinaryType@6bd7439d
+[2021-06-03 22:04:22.799] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration byte[] -> org.hibernate.type.BinaryType@6bd7439d
+[2021-06-03 22:04:22.799] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration [B -> org.hibernate.type.BinaryType@6bd7439d
+[2021-06-03 22:04:22.805] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4a9b92c6
+[2021-06-03 22:04:22.806] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4a9b92c6
+[2021-06-03 22:04:22.806] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4a9b92c6
+[2021-06-03 22:04:22.808] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration row_version -> org.hibernate.type.RowVersionType@690df641
+[2021-06-03 22:04:22.815] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration image -> org.hibernate.type.ImageType@1da75dde
+[2021-06-03 22:04:22.817] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration characters -> org.hibernate.type.CharArrayType@790654d5
+[2021-06-03 22:04:22.817] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration char[] -> org.hibernate.type.CharArrayType@790654d5
+[2021-06-03 22:04:22.818] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration [C -> org.hibernate.type.CharArrayType@790654d5
+[2021-06-03 22:04:22.819] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@176333ee
+[2021-06-03 22:04:22.819] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@176333ee
+[2021-06-03 22:04:22.820] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@176333ee
+[2021-06-03 22:04:22.834] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration text -> org.hibernate.type.TextType@30d5e37c
+[2021-06-03 22:04:22.835] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration ntext -> org.hibernate.type.NTextType@5e3d2765
+[2021-06-03 22:04:22.836] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration blob -> org.hibernate.type.BlobType@2a2b7a35
+[2021-06-03 22:04:22.837] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@2a2b7a35
+[2021-06-03 22:04:22.837] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6e321d9d
+[2021-06-03 22:04:22.839] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration clob -> org.hibernate.type.ClobType@2c0798bd
+[2021-06-03 22:04:22.839] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@2c0798bd
+[2021-06-03 22:04:22.860] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration nclob -> org.hibernate.type.NClobType@2712e8f4
+[2021-06-03 22:04:22.860] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2712e8f4
+[2021-06-03 22:04:22.866] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@3611153f
+[2021-06-03 22:04:22.867] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4a2e1e52
+[2021-06-03 22:04:22.869] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration serializable -> org.hibernate.type.SerializableType@29c1249a
+[2021-06-03 22:04:22.872] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration object -> org.hibernate.type.ObjectType@278fe428
+[2021-06-03 22:04:22.873] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@278fe428
+[2021-06-03 22:04:22.875] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@255ed8e4
+[2021-06-03 22:04:22.881] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@406ad6d5
+[2021-06-03 22:04:22.882] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@2a7bc16b
+[2021-06-03 22:04:22.883] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@1186374c
+[2021-06-03 22:04:22.884] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@42cc5460
+[2021-06-03 22:04:22.884] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5486ee92
+[2021-06-03 22:04:22.891] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@20820df0
+[2021-06-03 22:04:22.891] [omar-desktop] [main] DEBUG org.hibernate.type.BasicTypeRegistry@register:157 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@9e62fb
+[2021-06-03 22:04:22.902] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+[2021-06-03 22:04:22.914] [omar-desktop] [main] DEBUG o.h.b.internal.BootstrapContextImpl@injectJpaTempClassLoader:259 - Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@6003220a] into BootstrapContext; was [null]
+[2021-06-03 22:04:22.915] [omar-desktop] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl@injectTempClassLoader:45 - ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@6003220a) [was null]
+[2021-06-03 22:04:22.917] [omar-desktop] [main] DEBUG o.h.b.internal.BootstrapContextImpl@injectScanEnvironment:269 - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@2b395581] into BootstrapContext; was [null]
+[2021-06-03 22:04:22.918] [omar-desktop] [main] DEBUG o.h.b.internal.BootstrapContextImpl@injectScanOptions:264 - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@726a8729] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@1a2724d3]
+[2021-06-03 22:04:22.940] [omar-desktop] [main] DEBUG o.h.b.internal.BootstrapContextImpl@injectJpaTempClassLoader:259 - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@6003220a]
+[2021-06-03 22:04:22.942] [omar-desktop] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl@injectTempClassLoader:45 - ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@6003220a]
+[2021-06-03 22:04:22.947] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+[2021-06-03 22:04:22.949] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[2021-06-03 22:04:22.950] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[2021-06-03 22:04:22.951] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[2021-06-03 22:04:22.952] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[2021-06-03 22:04:22.952] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[2021-06-03 22:04:22.953] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[2021-06-03 22:04:22.954] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[2021-06-03 22:04:22.965] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[2021-06-03 22:04:22.967] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[2021-06-03 22:04:22.968] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[2021-06-03 22:04:22.969] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[2021-06-03 22:04:22.969] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[2021-06-03 22:04:22.970] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[2021-06-03 22:04:22.971] [omar-desktop] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory@register:81 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[2021-06-03 22:04:22.971] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[2021-06-03 22:04:22.972] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+[2021-06-03 22:04:22.972] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+[2021-06-03 22:04:22.974] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+[2021-06-03 22:04:22.975] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.engine.jndi.spi.JndiService]
+[2021-06-03 22:04:22.978] [omar-desktop] [main] INFO com.zaxxer.hikari.HikariDataSource@getConnection:110 - HikariPool-1 - Starting...
+[2021-06-03 22:04:23.774] [omar-desktop] [main] INFO com.zaxxer.hikari.HikariDataSource@getConnection:123 - HikariPool-1 - Start completed.
+[2021-06-03 22:04:23.789] [omar-desktop] [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator@initiateService:72 - Database ->
+       name : MySQL
+    version : 8.0.25-0ubuntu0.20.04.1
+      major : 8
+      minor : 0
+[2021-06-03 22:04:23.789] [omar-desktop] [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator@initiateService:83 - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.23 (Revision: 18bbd5e68195d0da083cbd5bd0d05d76320df7cd)
+      major : 8
+      minor : 0
+[2021-06-03 22:04:23.790] [omar-desktop] [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator@debugf:389 - JDBC version : 4.2
+[2021-06-03 22:04:23.813] [omar-desktop] [main] INFO org.hibernate.dialect.Dialect@<init>:175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[2021-06-03 22:04:23.834] [omar-desktop] [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder@applyIdentifierCasing:115 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[2021-06-03 22:04:23.906] [omar-desktop] [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder@build:189 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[2021-06-03 22:04:24.059] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [employeemanager]
+[2021-06-03 22:04:24.060] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [null]
+[2021-06-03 22:04:24.133] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+[2021-06-03 22:04:24.160] [omar-desktop] [main] DEBUG o.h.boot.model.relational.Namespace@<init>:51 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[2021-06-03 22:04:24.164] [omar-desktop] [main] DEBUG o.h.type.spi.TypeConfiguration$Scope@scope:152 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@53fbb2b4] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7434ee13]
+[2021-06-03 22:04:24.245] [omar-desktop] [main] DEBUG org.hibernate.cfg.AnnotationBinder@bindClass:560 - Binding entity from annotated class: com.appdemo.employeemanager.model.Employee
+[2021-06-03 22:04:24.341] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [DTYPE]
+[2021-06-03 22:04:24.342] [omar-desktop] [main] DEBUG org.hibernate.cfg.Ejb3Column@bind:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[2021-06-03 22:04:24.354] [omar-desktop] [main] DEBUG o.h.cfg.annotations.EntityBinder@bindEntity:430 - Import with entity name Employee
+[2021-06-03 22:04:24.355] [omar-desktop] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl@addImport:725 - Import: Employee -> com.appdemo.employeemanager.model.Employee
+[2021-06-03 22:04:24.355] [omar-desktop] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl@addImport:725 - Import: com.appdemo.employeemanager.model.Employee -> com.appdemo.employeemanager.model.Employee
+[2021-06-03 22:04:24.357] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [Employee]
+[2021-06-03 22:04:24.359] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [Employee]
+[2021-06-03 22:04:24.364] [omar-desktop] [main] DEBUG o.h.cfg.annotations.EntityBinder@bindTable:873 - Bind entity com.appdemo.employeemanager.model.Employee on table employee
+[2021-06-03 22:04:24.402] [omar-desktop] [main] TRACE org.hibernate.cfg.AnnotationBinder@processElementAnnotations:1661 - Processing annotations of com.appdemo.employeemanager.model.Employee.id
+[2021-06-03 22:04:24.417] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [id]
+[2021-06-03 22:04:24.418] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [id]
+[2021-06-03 22:04:24.418] [omar-desktop] [main] DEBUG org.hibernate.cfg.Ejb3Column@bind:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=id, insertable=true, updatable=false, unique=false}
+[2021-06-03 22:04:24.423] [omar-desktop] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl@classForName:60 - Not known whether passed class name [com.appdemo.employeemanager.model.Employee] is safe
+[2021-06-03 22:04:24.424] [omar-desktop] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl@classForName:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.appdemo.employeemanager.model.Employee
+[2021-06-03 22:04:24.425] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makePropertyAndValue:175 - MetadataSourceProcessor property id with lazy=false
+[2021-06-03 22:04:24.426] [omar-desktop] [main] DEBUG o.h.cfg.AbstractPropertyHolder@resolveAttributeConverterDescriptor:94 - Attempting to locate auto-apply AttributeConverter for property [com.appdemo.employeemanager.model.Employee:id]
+[2021-06-03 22:04:24.428] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@make:410 - building SimpleValue for id
+[2021-06-03 22:04:24.434] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [id]
+[2021-06-03 22:04:24.434] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [id]
+[2021-06-03 22:04:24.435] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [id]
+[2021-06-03 22:04:24.436] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makeProperty:266 - Building property id
+[2021-06-03 22:04:24.449] [omar-desktop] [main] TRACE o.h.cfg.annotations.PropertyBinder@makeProperty:329 - Cascading id with null
+[2021-06-03 22:04:24.450] [omar-desktop] [main] DEBUG org.hibernate.cfg.BinderHelper@makeIdGenerator:643 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+[2021-06-03 22:04:24.451] [omar-desktop] [main] TRACE org.hibernate.cfg.AnnotationBinder@processId:2474 - Bind @Id on id
+[2021-06-03 22:04:24.451] [omar-desktop] [main] TRACE org.hibernate.cfg.AnnotationBinder@processElementAnnotations:1661 - Processing annotations of com.appdemo.employeemanager.model.Employee.email
+[2021-06-03 22:04:24.452] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [email]
+[2021-06-03 22:04:24.452] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [email]
+[2021-06-03 22:04:24.453] [omar-desktop] [main] DEBUG org.hibernate.cfg.Ejb3Column@bind:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[2021-06-03 22:04:24.453] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makePropertyAndValue:175 - MetadataSourceProcessor property email with lazy=false
+[2021-06-03 22:04:24.453] [omar-desktop] [main] DEBUG o.h.cfg.AbstractPropertyHolder@resolveAttributeConverterDescriptor:94 - Attempting to locate auto-apply AttributeConverter for property [com.appdemo.employeemanager.model.Employee:email]
+[2021-06-03 22:04:24.454] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@make:410 - building SimpleValue for email
+[2021-06-03 22:04:24.454] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [email]
+[2021-06-03 22:04:24.456] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [email]
+[2021-06-03 22:04:24.456] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [email]
+[2021-06-03 22:04:24.457] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makeProperty:266 - Building property email
+[2021-06-03 22:04:24.457] [omar-desktop] [main] TRACE o.h.cfg.annotations.PropertyBinder@makeProperty:329 - Cascading email with null
+[2021-06-03 22:04:24.458] [omar-desktop] [main] TRACE org.hibernate.cfg.AnnotationBinder@processElementAnnotations:1661 - Processing annotations of com.appdemo.employeemanager.model.Employee.employeeCode
+[2021-06-03 22:04:24.459] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [employeeCode]
+[2021-06-03 22:04:24.459] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [employeeCode]
+[2021-06-03 22:04:24.459] [omar-desktop] [main] DEBUG org.hibernate.cfg.Ejb3Column@bind:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=employee_code, insertable=true, updatable=false, unique=false}
+[2021-06-03 22:04:24.459] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makePropertyAndValue:175 - MetadataSourceProcessor property employeeCode with lazy=false
+[2021-06-03 22:04:24.460] [omar-desktop] [main] DEBUG o.h.cfg.AbstractPropertyHolder@resolveAttributeConverterDescriptor:94 - Attempting to locate auto-apply AttributeConverter for property [com.appdemo.employeemanager.model.Employee:employeeCode]
+[2021-06-03 22:04:24.460] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@make:410 - building SimpleValue for employeeCode
+[2021-06-03 22:04:24.460] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [employeeCode]
+[2021-06-03 22:04:24.461] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [employeeCode]
+[2021-06-03 22:04:24.461] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [employeeCode]
+[2021-06-03 22:04:24.461] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makeProperty:266 - Building property employeeCode
+[2021-06-03 22:04:24.461] [omar-desktop] [main] TRACE o.h.cfg.annotations.PropertyBinder@makeProperty:329 - Cascading employeeCode with null
+[2021-06-03 22:04:24.462] [omar-desktop] [main] TRACE org.hibernate.cfg.AnnotationBinder@processElementAnnotations:1661 - Processing annotations of com.appdemo.employeemanager.model.Employee.imageUrl
+[2021-06-03 22:04:24.462] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [imageUrl]
+[2021-06-03 22:04:24.462] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [imageUrl]
+[2021-06-03 22:04:24.462] [omar-desktop] [main] DEBUG org.hibernate.cfg.Ejb3Column@bind:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=image_url, insertable=true, updatable=true, unique=false}
+[2021-06-03 22:04:24.463] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makePropertyAndValue:175 - MetadataSourceProcessor property imageUrl with lazy=false
+[2021-06-03 22:04:24.463] [omar-desktop] [main] DEBUG o.h.cfg.AbstractPropertyHolder@resolveAttributeConverterDescriptor:94 - Attempting to locate auto-apply AttributeConverter for property [com.appdemo.employeemanager.model.Employee:imageUrl]
+[2021-06-03 22:04:24.463] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@make:410 - building SimpleValue for imageUrl
+[2021-06-03 22:04:24.463] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [imageUrl]
+[2021-06-03 22:04:24.464] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [imageUrl]
+[2021-06-03 22:04:24.468] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [imageUrl]
+[2021-06-03 22:04:24.469] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makeProperty:266 - Building property imageUrl
+[2021-06-03 22:04:24.469] [omar-desktop] [main] TRACE o.h.cfg.annotations.PropertyBinder@makeProperty:329 - Cascading imageUrl with null
+[2021-06-03 22:04:24.470] [omar-desktop] [main] TRACE org.hibernate.cfg.AnnotationBinder@processElementAnnotations:1661 - Processing annotations of com.appdemo.employeemanager.model.Employee.jobTitle
+[2021-06-03 22:04:24.470] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [jobTitle]
+[2021-06-03 22:04:24.470] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [jobTitle]
+[2021-06-03 22:04:24.471] [omar-desktop] [main] DEBUG org.hibernate.cfg.Ejb3Column@bind:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=job_title, insertable=true, updatable=true, unique=false}
+[2021-06-03 22:04:24.471] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makePropertyAndValue:175 - MetadataSourceProcessor property jobTitle with lazy=false
+[2021-06-03 22:04:24.471] [omar-desktop] [main] DEBUG o.h.cfg.AbstractPropertyHolder@resolveAttributeConverterDescriptor:94 - Attempting to locate auto-apply AttributeConverter for property [com.appdemo.employeemanager.model.Employee:jobTitle]
+[2021-06-03 22:04:24.471] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@make:410 - building SimpleValue for jobTitle
+[2021-06-03 22:04:24.472] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [jobTitle]
+[2021-06-03 22:04:24.472] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [jobTitle]
+[2021-06-03 22:04:24.472] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [jobTitle]
+[2021-06-03 22:04:24.472] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makeProperty:266 - Building property jobTitle
+[2021-06-03 22:04:24.472] [omar-desktop] [main] TRACE o.h.cfg.annotations.PropertyBinder@makeProperty:329 - Cascading jobTitle with null
+[2021-06-03 22:04:24.473] [omar-desktop] [main] TRACE org.hibernate.cfg.AnnotationBinder@processElementAnnotations:1661 - Processing annotations of com.appdemo.employeemanager.model.Employee.name
+[2021-06-03 22:04:24.473] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [name]
+[2021-06-03 22:04:24.473] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [name]
+[2021-06-03 22:04:24.473] [omar-desktop] [main] DEBUG org.hibernate.cfg.Ejb3Column@bind:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=name, insertable=true, updatable=true, unique=false}
+[2021-06-03 22:04:24.474] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makePropertyAndValue:175 - MetadataSourceProcessor property name with lazy=false
+[2021-06-03 22:04:24.474] [omar-desktop] [main] DEBUG o.h.cfg.AbstractPropertyHolder@resolveAttributeConverterDescriptor:94 - Attempting to locate auto-apply AttributeConverter for property [com.appdemo.employeemanager.model.Employee:name]
+[2021-06-03 22:04:24.479] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@make:410 - building SimpleValue for name
+[2021-06-03 22:04:24.481] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [name]
+[2021-06-03 22:04:24.481] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [name]
+[2021-06-03 22:04:24.481] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [name]
+[2021-06-03 22:04:24.481] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makeProperty:266 - Building property name
+[2021-06-03 22:04:24.482] [omar-desktop] [main] TRACE o.h.cfg.annotations.PropertyBinder@makeProperty:329 - Cascading name with null
+[2021-06-03 22:04:24.482] [omar-desktop] [main] TRACE org.hibernate.cfg.AnnotationBinder@processElementAnnotations:1661 - Processing annotations of com.appdemo.employeemanager.model.Employee.phone
+[2021-06-03 22:04:24.482] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [phone]
+[2021-06-03 22:04:24.482] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [phone]
+[2021-06-03 22:04:24.483] [omar-desktop] [main] DEBUG org.hibernate.cfg.Ejb3Column@bind:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=phone, insertable=true, updatable=true, unique=false}
+[2021-06-03 22:04:24.483] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makePropertyAndValue:175 - MetadataSourceProcessor property phone with lazy=false
+[2021-06-03 22:04:24.483] [omar-desktop] [main] DEBUG o.h.cfg.AbstractPropertyHolder@resolveAttributeConverterDescriptor:94 - Attempting to locate auto-apply AttributeConverter for property [com.appdemo.employeemanager.model.Employee:phone]
+[2021-06-03 22:04:24.483] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@make:410 - building SimpleValue for phone
+[2021-06-03 22:04:24.484] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [phone]
+[2021-06-03 22:04:24.484] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [phone]
+[2021-06-03 22:04:24.484] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@normalizeQuoting:59 - Normalizing identifier quoting [phone]
+[2021-06-03 22:04:24.484] [omar-desktop] [main] DEBUG o.h.cfg.annotations.PropertyBinder@makeProperty:266 - Building property phone
+[2021-06-03 22:04:24.484] [omar-desktop] [main] TRACE o.h.cfg.annotations.PropertyBinder@makeProperty:329 - Cascading phone with null
+[2021-06-03 22:04:24.489] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@fillSimpleValue:455 - Starting fillSimpleValue for id
+[2021-06-03 22:04:24.490] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@fillSimpleValue:455 - Starting fillSimpleValue for email
+[2021-06-03 22:04:24.490] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@fillSimpleValue:455 - Starting fillSimpleValue for employeeCode
+[2021-06-03 22:04:24.490] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@fillSimpleValue:455 - Starting fillSimpleValue for imageUrl
+[2021-06-03 22:04:24.491] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@fillSimpleValue:455 - Starting fillSimpleValue for jobTitle
+[2021-06-03 22:04:24.491] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@fillSimpleValue:455 - Starting fillSimpleValue for name
+[2021-06-03 22:04:24.491] [omar-desktop] [main] DEBUG o.h.c.annotations.SimpleValueBinder@fillSimpleValue:455 - Starting fillSimpleValue for phone
+[2021-06-03 22:04:24.492] [omar-desktop] [main] DEBUG org.hibernate.mapping.PrimaryKey@addColumn:35 - Forcing column [id] to be non-null as it is part of the primary key for table [employee]
+[2021-06-03 22:04:24.506] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.boot.spi.SessionFactoryBuilderService]
+[2021-06-03 22:04:24.541] [omar-desktop] [main] TRACE org.hibernate.loader.BatchFetchStyle@interpret:51 - Interpreting BatchFetchStyle from setting : null
+[2021-06-03 22:04:24.555] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.bytecode.spi.BytecodeProvider]
+[2021-06-03 22:04:24.601] [omar-desktop] [main] DEBUG o.h.internal.SessionFactoryImpl@<init>:204 - Building session factory
+[2021-06-03 22:04:24.602] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:68 - SessionFactory name : null
+[2021-06-03 22:04:24.602] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:69 - Automatic flush during beforeCompletion(): enabled
+[2021-06-03 22:04:24.603] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:70 - Automatic session close at end of transaction: disabled
+[2021-06-03 22:04:24.603] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:72 - Statistics: disabled
+[2021-06-03 22:04:24.603] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:74 - Deleted entity synthetic identifier rollback: disabled
+[2021-06-03 22:04:24.603] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:75 - Default entity-mode: pojo
+[2021-06-03 22:04:24.604] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:76 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[2021-06-03 22:04:24.604] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:77 - Allow initialization of lazy state outside session : disabled
+[2021-06-03 22:04:24.604] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:79 - Using BatchFetchStyle : LEGACY
+[2021-06-03 22:04:24.604] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:80 - Default batch fetch size: -1
+[2021-06-03 22:04:24.604] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:81 - Maximum outer join fetch depth: 2
+[2021-06-03 22:04:24.605] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:82 - Default null ordering: NONE
+[2021-06-03 22:04:24.605] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:83 - Order SQL updates by primary key: disabled
+[2021-06-03 22:04:24.605] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:84 - Order SQL inserts for batching: disabled
+[2021-06-03 22:04:24.605] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:86 - multi-tenancy strategy : NONE
+[2021-06-03 22:04:24.605] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:88 - JTA Track by Thread: enabled
+[2021-06-03 22:04:24.605] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:90 - Query language substitutions: {}
+[2021-06-03 22:04:24.606] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:91 - Named query checking : enabled
+[2021-06-03 22:04:24.606] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:93 - Second-level cache: disabled
+[2021-06-03 22:04:24.606] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:94 - Second-level query cache: disabled
+[2021-06-03 22:04:24.606] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:95 - Second-level query cache factory: null
+[2021-06-03 22:04:24.606] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:96 - Second-level cache region prefix: null
+[2021-06-03 22:04:24.606] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:97 - Optimize second-level cache for minimal puts: disabled
+[2021-06-03 22:04:24.607] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:98 - Structured second-level cache entries: disabled
+[2021-06-03 22:04:24.607] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:99 - Second-level cache direct-reference entries: disabled
+[2021-06-03 22:04:24.607] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:100 - Automatic eviction of collection cache: disabled
+[2021-06-03 22:04:24.607] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:102 - JDBC batch size: 15
+[2021-06-03 22:04:24.607] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:103 - JDBC batch updates for versioned data: enabled
+[2021-06-03 22:04:24.607] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:104 - Scrollable result sets: enabled
+[2021-06-03 22:04:24.607] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:105 - Wrap result sets: disabled
+[2021-06-03 22:04:24.608] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:106 - JDBC3 getGeneratedKeys(): enabled
+[2021-06-03 22:04:24.608] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:107 - JDBC result set fetch size: null
+[2021-06-03 22:04:24.608] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:108 - Connection release mode: ON_CLOSE
+[2021-06-03 22:04:24.620] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:109 - Generate SQL with comments: disabled
+[2021-06-03 22:04:24.621] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:111 - JPA compliance - query : disabled
+[2021-06-03 22:04:24.621] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:112 - JPA compliance - closed-handling : disabled
+[2021-06-03 22:04:24.622] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:113 - JPA compliance - lists : disabled
+[2021-06-03 22:04:24.622] [omar-desktop] [main] DEBUG org.hibernate.cfg.Settings@<init>:114 - JPA compliance - transactions : disabled
+[2021-06-03 22:04:24.622] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.service.spi.SessionFactoryServiceRegistryFactory]
+[2021-06-03 22:04:24.643] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.event.service.spi.EventListenerRegistry]
+[2021-06-03 22:04:24.739] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+[2021-06-03 22:04:24.747] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.cache.spi.CacheImplementor]
+[2021-06-03 22:04:24.762] [omar-desktop] [main] DEBUG o.h.internal.SessionFactoryImpl@<init>:259 - Session factory constructed with filter configurations : {}
+[2021-06-03 22:04:24.762] [omar-desktop] [main] DEBUG o.h.internal.SessionFactoryImpl@<init>:260 - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, hibernate.id.new_generator_mappings=true, java.specification.version=11, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@c0004b7, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.MySQL8Dialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/home/omar/IdeaProjects/EmployeeManager/target/classes:/home/omar/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.4.5/spring-boot-starter-data-jpa-2.4.5.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.4.5/spring-boot-starter-aop-2.4.5.jar:/home/omar/.m2/repository/org/springframework/spring-aop/5.3.6/spring-aop-5.3.6.jar:/home/omar/.m2/repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.4.5/spring-boot-starter-jdbc-2.4.5.jar:/home/omar/.m2/repository/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.jar:/home/omar/.m2/repository/org/springframework/spring-jdbc/5.3.6/spring-jdbc-5.3.6.jar:/home/omar/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/home/omar/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/home/omar/.m2/repository/org/hibernate/hibernate-core/5.4.30.Final/hibernate-core-5.4.30.Final.jar:/home/omar/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/home/omar/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/omar/.m2/repository/net/bytebuddy/byte-buddy/1.10.22/byte-buddy-1.10.22.jar:/home/omar/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/omar/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/omar/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/omar/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/home/omar/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/omar/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.4/jaxb-runtime-2.3.4.jar:/home/omar/.m2/repository/org/glassfish/jaxb/txw2/2.3.4/txw2-2.3.4.jar:/home/omar/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/home/omar/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/omar/.m2/repository/org/springframework/data/spring-data-jpa/2.4.8/spring-data-jpa-2.4.8.jar:/home/omar/.m2/repository/org/springframework/data/spring-data-commons/2.4.8/spring-data-commons-2.4.8.jar:/home/omar/.m2/repository/org/springframework/spring-orm/5.3.6/spring-orm-5.3.6.jar:/home/omar/.m2/repository/org/springframework/spring-context/5.3.6/spring-context-5.3.6.jar:/home/omar/.m2/repository/org/springframework/spring-tx/5.3.6/spring-tx-5.3.6.jar:/home/omar/.m2/repository/org/springframework/spring-beans/5.3.6/spring-beans-5.3.6.jar:/home/omar/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/omar/.m2/repository/org/springframework/spring-aspects/5.3.6/spring-aspects-5.3.6.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.4.5/spring-boot-starter-web-2.4.5.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot-starter/2.4.5/spring-boot-starter-2.4.5.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot/2.4.5/spring-boot-2.4.5.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.4.5/spring-boot-autoconfigure-2.4.5.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.4.5/spring-boot-starter-logging-2.4.5.jar:/home/omar/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/omar/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/omar/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar:/home/omar/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar:/home/omar/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/home/omar/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/omar/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.4.5/spring-boot-starter-json-2.4.5.jar:/home/omar/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4.jar:/home/omar/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4.jar:/home/omar/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.4/jackson-module-parameter-names-2.11.4.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.4.5/spring-boot-starter-tomcat-2.4.5.jar:/home/omar/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.45/tomcat-embed-core-9.0.45.jar:/home/omar/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar:/home/omar/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.45/tomcat-embed-websocket-9.0.45.jar:/home/omar/.m2/repository/org/springframework/spring-web/5.3.6/spring-web-5.3.6.jar:/home/omar/.m2/repository/org/springframework/spring-webmvc/5.3.6/spring-webmvc-5.3.6.jar:/home/omar/.m2/repository/org/springframework/spring-expression/5.3.6/spring-expression-5.3.6.jar:/home/omar/.m2/repository/mysql/mysql-connector-java/8.0.23/mysql-connector-java-8.0.23.jar:/home/omar/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/home/omar/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/omar/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/omar/.m2/repository/org/springframework/spring-core/5.3.6/spring-core-5.3.6.jar:/home/omar/.m2/repository/org/springframework/spring-jcl/5.3.6/spring-jcl-5.3.6.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/2.4.5/spring-boot-starter-actuator-2.4.5.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.4.5/spring-boot-actuator-autoconfigure-2.4.5.jar:/home/omar/.m2/repository/org/springframework/boot/spring-boot-actuator/2.4.5/spring-boot-actuator-2.4.5.jar:/home/omar/.m2/repository/io/micrometer/micrometer-core/1.6.6/micrometer-core-1.6.6.jar:/home/omar/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/home/omar/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/omar/.m2/repository/net/logstash/logback/logstash-logback-encoder/6.3/logstash-logback-encoder-6.3.jar:/home/omar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar:/home/omar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar:/home/omar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar, java.vm.vendor=AdoptOpenJDK, sun.arch.data.model=64, java.vendor.url=https://adoptopenjdk.net/, catalina.useNaming=false, user.timezone=Africa/Casablanca, os.name=Linux, java.vm.specification.version=11, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/home/omar/.jdks/adopt-openjdk-11.0.11/lib, sun.java.command=com.appdemo.employeemanager.EmployeemanagerApplication, spring.application.admin.enabled=true, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@63880be9, com.sun.management.jmxremote=, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, spring.liveBeansView.mbeanDomain=, sun.cpu.endian=little, user.home=/home/omar, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2021-04-20, java.home=/home/omar/.jdks/adopt-openjdk-11.0.11, file.separator=/, spring.output.ansi.enabled=always, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.awt.headless=true, hibernate.hbm2ddl.auto=update, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.11+9, user.name=omar, spring.jmx.enabled=true, path.separator=:, os.version=5.8.0-53-generic, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=AdoptOpenJDK-11.0.11+9, java.vendor.url.bug=https://github.com/AdoptOpenJDK/openjdk-support/issues, java.io.tmpdir=/tmp, catalina.home=/tmp/tomcat.8080.2389112823754940761, java.version=11.0.11, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/home/omar/IdeaProjects/EmployeeManager, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=39023, java.awt.printerjob=sun.print.PSPrinterJob, sun.os.patch.level=unknown, CONSOLE_LOG_CHARSET=UTF-8, catalina.base=/tmp/tomcat.8080.2389112823754940761, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@27053257, java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor=AdoptOpenJDK, java.vm.info=mixed mode, java.vm.version=11.0.11+9, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), java.class.version=55.0}
+[2021-06-03 22:04:24.780] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.engine.query.spi.NativeQueryInterpreter]
+[2021-06-03 22:04:24.790] [omar-desktop] [main] DEBUG o.h.secure.spi.JaccIntegrator@doIntegration:80 - Skipping JACC integration as it was not enabled
+[2021-06-03 22:04:24.791] [omar-desktop] [main] DEBUG o.h.internal.SessionFactoryImpl@<init>:300 - Instantiated session factory
+[2021-06-03 22:04:24.791] [omar-desktop] [main] DEBUG o.h.type.spi.TypeConfiguration$Scope@scope:157 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@53fbb2b4] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@7e9a836]
+[2021-06-03 22:04:24.800] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.persister.spi.PersisterFactory]
+[2021-06-03 22:04:24.816] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.persister.spi.PersisterClassResolver]
+[2021-06-03 22:04:24.897] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.property.access.spi.PropertyAccessStrategyResolver]
+[2021-06-03 22:04:24.933] [omar-desktop] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl@classForName:60 - Not known whether passed class name [com.appdemo.employeemanager.model.Employee] is safe
+[2021-06-03 22:04:24.933] [omar-desktop] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl@classForName:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.appdemo.employeemanager.model.Employee
+[2021-06-03 22:04:24.939] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.bytecode.spi.ProxyFactoryFactory]
+[2021-06-03 22:04:25.551] [omar-desktop] [main] TRACE o.h.p.entity.AbstractPropertyMapping@logDuplicateRegistration:129 - Skipping duplicate registration of path [email], existing type = [org.hibernate.type.StringType@bd4ee01], incoming type = [org.hibernate.type.StringType@bd4ee01]
+[2021-06-03 22:04:25.554] [omar-desktop] [main] TRACE o.h.p.entity.AbstractPropertyMapping@logDuplicateRegistration:129 - Skipping duplicate registration of path [employeeCode], existing type = [org.hibernate.type.StringType@bd4ee01], incoming type = [org.hibernate.type.StringType@bd4ee01]
+[2021-06-03 22:04:25.557] [omar-desktop] [main] TRACE o.h.p.entity.AbstractPropertyMapping@logDuplicateRegistration:129 - Skipping duplicate registration of path [imageUrl], existing type = [org.hibernate.type.StringType@bd4ee01], incoming type = [org.hibernate.type.StringType@bd4ee01]
+[2021-06-03 22:04:25.558] [omar-desktop] [main] TRACE o.h.p.entity.AbstractPropertyMapping@logDuplicateRegistration:129 - Skipping duplicate registration of path [jobTitle], existing type = [org.hibernate.type.StringType@bd4ee01], incoming type = [org.hibernate.type.StringType@bd4ee01]
+[2021-06-03 22:04:25.561] [omar-desktop] [main] TRACE o.h.p.entity.AbstractPropertyMapping@logDuplicateRegistration:129 - Skipping duplicate registration of path [name], existing type = [org.hibernate.type.StringType@bd4ee01], incoming type = [org.hibernate.type.StringType@bd4ee01]
+[2021-06-03 22:04:25.563] [omar-desktop] [main] TRACE o.h.p.entity.AbstractPropertyMapping@logDuplicateRegistration:129 - Skipping duplicate registration of path [phone], existing type = [org.hibernate.type.StringType@bd4ee01], incoming type = [org.hibernate.type.StringType@bd4ee01]
+[2021-06-03 22:04:25.570] [omar-desktop] [main] TRACE o.h.p.entity.AbstractPropertyMapping@logDuplicateRegistration:129 - Skipping duplicate registration of path [id], existing type = [org.hibernate.type.LongType@3b57f915], incoming type = [org.hibernate.type.LongType@3b57f915]
+[2021-06-03 22:04:25.586] [omar-desktop] [main] DEBUG o.h.p.entity.AbstractEntityPersister@logStaticSQL:3918 - Static SQL for entity: com.appdemo.employeemanager.model.Employee
+[2021-06-03 22:04:25.587] [omar-desktop] [main] DEBUG o.h.p.entity.AbstractEntityPersister@logStaticSQL:3923 -  Version select: select id from employee where id =?
+[2021-06-03 22:04:25.587] [omar-desktop] [main] DEBUG o.h.p.entity.AbstractEntityPersister@logStaticSQL:3926 -  Snapshot select: select employee_.id, employee_.email as email2_0_, employee_.image_url as image_ur4_0_, employee_.job_title as job_titl5_0_, employee_.name as name6_0_, employee_.phone as phone7_0_ from employee employee_ where employee_.id=?
+[2021-06-03 22:04:25.587] [omar-desktop] [main] DEBUG o.h.p.entity.AbstractEntityPersister@debugf:394 -  Insert 0: insert into employee (email, employee_code, image_url, job_title, name, phone, id) values (?, ?, ?, ?, ?, ?, ?)
+[2021-06-03 22:04:25.587] [omar-desktop] [main] DEBUG o.h.p.entity.AbstractEntityPersister@debugf:394 -  Update 0: update employee set email=?, image_url=?, job_title=?, name=?, phone=? where id=?
+[2021-06-03 22:04:25.588] [omar-desktop] [main] DEBUG o.h.p.entity.AbstractEntityPersister@debugf:394 -  Delete 0: delete from employee where id=?
+[2021-06-03 22:04:25.588] [omar-desktop] [main] DEBUG o.h.p.entity.AbstractEntityPersister@logStaticSQL:3934 -  Identity insert: insert into employee (email, employee_code, image_url, job_title, name, phone) values (?, ?, ?, ?, ?, ?)
+[2021-06-03 22:04:25.621] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@startingEntity:172 -  Starting root entity : com.appdemo.employeemanager.model.Employee
+[2021-06-03 22:04:25.628] [omar-desktop] [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl@registerQuerySpace:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6705b763]
+[2021-06-03 22:04:25.629] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@pushToStack:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@5895c065
+[2021-06-03 22:04:25.630] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@associationKeyRegistered:648 - .. Registering AssociationKey : AssociationKey(table=employee, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@5895c065
+[2021-06-03 22:04:25.635] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@startingEntityIdentifier:239 - >> Starting entity identifier : com.appdemo.employeemanager.model.Employee
+[2021-06-03 22:04:25.636] [omar-desktop] [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker@visitAttributeDefinition:146 - Visiting attribute path : email
+[2021-06-03 22:04:25.639] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@startingAttribute:547 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+[2021-06-03 22:04:25.639] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@finishingAttribute:628 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+[2021-06-03 22:04:25.639] [omar-desktop] [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker@visitAttributeDefinition:146 - Visiting attribute path : employeeCode
+[2021-06-03 22:04:25.640] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@startingAttribute:547 - >> Starting attribute Attribute(name=employeeCode, type=string [non-identifier])
+[2021-06-03 22:04:25.640] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@finishingAttribute:628 - << Finishing up attribute : Attribute(name=employeeCode, type=string [non-identifier])
+[2021-06-03 22:04:25.640] [omar-desktop] [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker@visitAttributeDefinition:146 - Visiting attribute path : imageUrl
+[2021-06-03 22:04:25.641] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@startingAttribute:547 - >> Starting attribute Attribute(name=imageUrl, type=string [non-identifier])
+[2021-06-03 22:04:25.641] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@finishingAttribute:628 - << Finishing up attribute : Attribute(name=imageUrl, type=string [non-identifier])
+[2021-06-03 22:04:25.641] [omar-desktop] [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker@visitAttributeDefinition:146 - Visiting attribute path : jobTitle
+[2021-06-03 22:04:25.641] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@startingAttribute:547 - >> Starting attribute Attribute(name=jobTitle, type=string [non-identifier])
+[2021-06-03 22:04:25.642] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@finishingAttribute:628 - << Finishing up attribute : Attribute(name=jobTitle, type=string [non-identifier])
+[2021-06-03 22:04:25.642] [omar-desktop] [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker@visitAttributeDefinition:146 - Visiting attribute path : name
+[2021-06-03 22:04:25.642] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@startingAttribute:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+[2021-06-03 22:04:25.642] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@finishingAttribute:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+[2021-06-03 22:04:25.642] [omar-desktop] [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker@visitAttributeDefinition:146 - Visiting attribute path : phone
+[2021-06-03 22:04:25.643] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@startingAttribute:547 - >> Starting attribute Attribute(name=phone, type=string [non-identifier])
+[2021-06-03 22:04:25.649] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@finishingAttribute:628 - << Finishing up attribute : Attribute(name=phone, type=string [non-identifier])
+[2021-06-03 22:04:25.649] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@popFromStack:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@5895c065
+[2021-06-03 22:04:25.649] [omar-desktop] [main] TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy@finishingEntity:208 -  Finished root entity : com.appdemo.employeemanager.model.Employee
+[2021-06-03 22:04:25.649] [omar-desktop] [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy@buildLoadPlan:160 - Building LoadPlan...
+[2021-06-03 22:04:25.664] [omar-desktop] [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor@processQuerySpaceJoins:102 - processing queryspace <gen:0>
+[2021-06-03 22:04:25.671] [omar-desktop] [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter@logTree:55 - LoadPlan(entity=com.appdemo.employeemanager.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.appdemo.employeemanager.model.Employee, querySpaceUid=<gen:0>, path=com.appdemo.employeemanager.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.appdemo.employeemanager.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[2021-06-03 22:04:25.673] [omar-desktop] [main] DEBUG o.h.loader.entity.plan.EntityLoader@<init>:129 - Static select for entity com.appdemo.employeemanager.model.Employee [NONE]: select employee0_.id as id1_0_0_, employee0_.email as email2_0_0_, employee0_.employee_code as employee3_0_0_, employee0_.image_url as image_ur4_0_0_, employee0_.job_title as job_titl5_0_0_, employee0_.name as name6_0_0_, employee0_.phone as phone7_0_0_ from employee employee0_ where employee0_.id=?
+[2021-06-03 22:04:25.705] [omar-desktop] [main] TRACE o.h.m.internal.MetadataContext@wrapUp:204 - Wrapping up metadata context...
+[2021-06-03 22:04:25.706] [omar-desktop] [main] TRACE o.h.m.internal.MetadataContext@wrapUp:216 - Starting entity [com.appdemo.employeemanager.model.Employee]
+[2021-06-03 22:04:25.706] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@buildIdAttribute:173 - Building identifier attribute [Employee.id]
+[2021-06-03 22:04:25.707] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:482 - Starting attribute metadata determination [id]
+[2021-06-03 22:04:25.708] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:487 -     Determined member [private java.lang.Long com.appdemo.employeemanager.model.Employee.id]
+[2021-06-03 22:04:25.708] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:491 -     Determined type [name=long, class=org.hibernate.type.LongType]
+[2021-06-03 22:04:25.721] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@buildAttribute:90 - Building attribute [Employee.email]
+[2021-06-03 22:04:25.721] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:482 - Starting attribute metadata determination [email]
+[2021-06-03 22:04:25.722] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:487 -     Determined member [private java.lang.String com.appdemo.employeemanager.model.Employee.email]
+[2021-06-03 22:04:25.722] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:491 -     Determined type [name=string, class=org.hibernate.type.StringType]
+[2021-06-03 22:04:25.722] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@buildAttribute:90 - Building attribute [Employee.employeeCode]
+[2021-06-03 22:04:25.722] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:482 - Starting attribute metadata determination [employeeCode]
+[2021-06-03 22:04:25.722] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:487 -     Determined member [private java.lang.String com.appdemo.employeemanager.model.Employee.employeeCode]
+[2021-06-03 22:04:25.722] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:491 -     Determined type [name=string, class=org.hibernate.type.StringType]
+[2021-06-03 22:04:25.722] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@buildAttribute:90 - Building attribute [Employee.imageUrl]
+[2021-06-03 22:04:25.723] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:482 - Starting attribute metadata determination [imageUrl]
+[2021-06-03 22:04:25.723] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:487 -     Determined member [private java.lang.String com.appdemo.employeemanager.model.Employee.imageUrl]
+[2021-06-03 22:04:25.723] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:491 -     Determined type [name=string, class=org.hibernate.type.StringType]
+[2021-06-03 22:04:25.723] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@buildAttribute:90 - Building attribute [Employee.jobTitle]
+[2021-06-03 22:04:25.723] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:482 - Starting attribute metadata determination [jobTitle]
+[2021-06-03 22:04:25.723] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:487 -     Determined member [private java.lang.String com.appdemo.employeemanager.model.Employee.jobTitle]
+[2021-06-03 22:04:25.723] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:491 -     Determined type [name=string, class=org.hibernate.type.StringType]
+[2021-06-03 22:04:25.723] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@buildAttribute:90 - Building attribute [Employee.name]
+[2021-06-03 22:04:25.723] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:482 - Starting attribute metadata determination [name]
+[2021-06-03 22:04:25.723] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:487 -     Determined member [private java.lang.String com.appdemo.employeemanager.model.Employee.name]
+[2021-06-03 22:04:25.724] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:491 -     Determined type [name=string, class=org.hibernate.type.StringType]
+[2021-06-03 22:04:25.724] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@buildAttribute:90 - Building attribute [Employee.phone]
+[2021-06-03 22:04:25.724] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:482 - Starting attribute metadata determination [phone]
+[2021-06-03 22:04:25.724] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:487 -     Determined member [private java.lang.String com.appdemo.employeemanager.model.Employee.phone]
+[2021-06-03 22:04:25.724] [omar-desktop] [main] TRACE o.h.m.internal.AttributeFactory@determineAttributeMetadata:491 -     Determined type [name=string, class=org.hibernate.type.StringType]
+[2021-06-03 22:04:25.736] [omar-desktop] [main] TRACE o.h.m.internal.MetadataContext@wrapUp:251 - Completed entity [com.appdemo.employeemanager.model.Employee]
+[2021-06-03 22:04:25.745] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.tool.schema.spi.SchemaManagementTool]
+[2021-06-03 22:04:25.752] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder]
+[2021-06-03 22:04:25.795] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataObjectName:192 - Normalizing identifier quoting for object name [employeemanager]
+[2021-06-03 22:04:25.800] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataText:154 - Rendering unquoted identifier [employeemanager] in mixed case for use in DatabaseMetaData
+[2021-06-03 22:04:25.857] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataObjectName:192 - Normalizing identifier quoting for object name [employee]
+[2021-06-03 22:04:25.858] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataText:154 - Rendering unquoted identifier [employee] in mixed case for use in DatabaseMetaData
+[2021-06-03 22:04:25.858] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataObjectName:192 - Normalizing identifier quoting for object name [id]
+[2021-06-03 22:04:25.858] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataText:154 - Rendering unquoted identifier [id] in mixed case for use in DatabaseMetaData
+[2021-06-03 22:04:25.858] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataObjectName:192 - Normalizing identifier quoting for object name [email]
+[2021-06-03 22:04:25.858] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataText:154 - Rendering unquoted identifier [email] in mixed case for use in DatabaseMetaData
+[2021-06-03 22:04:25.858] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataObjectName:192 - Normalizing identifier quoting for object name [employee_code]
+[2021-06-03 22:04:25.858] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataText:154 - Rendering unquoted identifier [employee_code] in mixed case for use in DatabaseMetaData
+[2021-06-03 22:04:25.858] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataObjectName:192 - Normalizing identifier quoting for object name [image_url]
+[2021-06-03 22:04:25.859] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataText:154 - Rendering unquoted identifier [image_url] in mixed case for use in DatabaseMetaData
+[2021-06-03 22:04:25.859] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataObjectName:192 - Normalizing identifier quoting for object name [job_title]
+[2021-06-03 22:04:25.859] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataText:154 - Rendering unquoted identifier [job_title] in mixed case for use in DatabaseMetaData
+[2021-06-03 22:04:25.859] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataObjectName:192 - Normalizing identifier quoting for object name [name]
+[2021-06-03 22:04:25.859] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataText:154 - Rendering unquoted identifier [name] in mixed case for use in DatabaseMetaData
+[2021-06-03 22:04:25.859] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataObjectName:192 - Normalizing identifier quoting for object name [phone]
+[2021-06-03 22:04:25.859] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataText:154 - Rendering unquoted identifier [phone] in mixed case for use in DatabaseMetaData
+[2021-06-03 22:04:25.859] [omar-desktop] [main] DEBUG org.hibernate.mapping.Table@sqlAlterStrings:520 - No alter strings for table : employee
+[2021-06-03 22:04:25.859] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataObjectName:192 - Normalizing identifier quoting for object name [employee]
+[2021-06-03 22:04:25.860] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataText:154 - Rendering unquoted identifier [employee] in mixed case for use in DatabaseMetaData
+[2021-06-03 22:04:25.866] [omar-desktop] [main] TRACE o.h.t.h.UniqueConstraintSchemaUpdateStrategy@interpret:50 - Interpreting UniqueConstraintSchemaUpdateStrategy from setting : null
+[2021-06-03 22:04:25.866] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataObjectName:192 - Normalizing identifier quoting for object name [employee]
+[2021-06-03 22:04:25.866] [omar-desktop] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl@toMetaDataText:154 - Rendering unquoted identifier [employee] in mixed case for use in DatabaseMetaData
+[2021-06-03 22:04:25.867] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform]
+[2021-06-03 22:04:25.867] [omar-desktop] [main] INFO o.h.e.t.j.p.i.JtaPlatformInitiator@initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-06-03 22:04:25.868] [omar-desktop] [main] DEBUG o.h.query.spi.NamedQueryRepository@checkNamedQueries:153 - Checking 0 named HQL queries
+[2021-06-03 22:04:25.868] [omar-desktop] [main] DEBUG o.h.query.spi.NamedQueryRepository@checkNamedQueries:167 - Checking 0 named SQL queries
+[2021-06-03 22:04:25.887] [omar-desktop] [main] TRACE o.h.type.spi.TypeConfiguration$Scope@sessionFactoryCreated:205 - Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@7e9a836] for TypeConfiguration
+[2021-06-03 22:04:25.891] [omar-desktop] [main] DEBUG o.h.internal.SessionFactoryRegistry@<init>:51 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@5e3d84a
+[2021-06-03 22:04:25.891] [omar-desktop] [main] DEBUG o.h.internal.SessionFactoryRegistry@addSessionFactory:73 - Registering SessionFactory: e96127ba-2a6c-4ee4-8e2c-ad62379f51ec (<unnamed>)
+[2021-06-03 22:04:25.891] [omar-desktop] [main] DEBUG o.h.internal.SessionFactoryRegistry@addSessionFactory:80 - Not binding SessionFactory to JNDI, no JNDI name configured
+[2021-06-03 22:04:25.895] [omar-desktop] [main] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-06-03 22:04:26.161] [omar-desktop] [main] TRACE o.h.i.SessionFactoryImpl$SessionBuilderImpl@openSession:1281 - Opening Hibernate Session.  tenant=null
+[2021-06-03 22:04:26.284] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.stat.spi.StatisticsImplementor]
+[2021-06-03 22:04:26.290] [omar-desktop] [main] DEBUG o.h.s.internal.StatisticsInitiator@initiateServiceInternal:101 - Statistics initialized [enabled=false]
+[2021-06-03 22:04:26.308] [omar-desktop] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl@initializeService:233 - Initializing service [role=org.hibernate.jmx.spi.JmxService]
+[2021-06-03 22:04:26.316] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@<init>:270 - Opened Session [7218faeb-ce60-4a9b-9110-09184d70bc24] at timestamp: 1622754266184
+[2021-06-03 22:04:26.319] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@closeWithoutOpenChecks:366 - Closing session [7218faeb-ce60-4a9b-9110-09184d70bc24]
+[2021-06-03 22:04:26.320] [omar-desktop] [main] TRACE o.h.e.j.internal.JdbcCoordinatorImpl@close:166 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@4bc41565]
+[2021-06-03 22:04:26.320] [omar-desktop] [main] TRACE o.h.r.j.i.ResourceRegistryStandardImpl@releaseResources:317 - Releasing JDBC resources
+[2021-06-03 22:04:26.321] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:257 - Closing logical connection
+[2021-06-03 22:04:26.321] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:264 - Logical connection closed
+[2021-06-03 22:04:26.321] [omar-desktop] [main] TRACE o.h.i.SessionFactoryImpl$SessionBuilderImpl@openSession:1281 - Opening Hibernate Session.  tenant=null
+[2021-06-03 22:04:26.322] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@<init>:270 - Opened Session [cf30c74a-8272-46af-aabe-042a3507768c] at timestamp: 1622754266322
+[2021-06-03 22:04:26.322] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@closeWithoutOpenChecks:366 - Closing session [cf30c74a-8272-46af-aabe-042a3507768c]
+[2021-06-03 22:04:26.322] [omar-desktop] [main] TRACE o.h.e.j.internal.JdbcCoordinatorImpl@close:166 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@27bf574b]
+[2021-06-03 22:04:26.322] [omar-desktop] [main] TRACE o.h.r.j.i.ResourceRegistryStandardImpl@releaseResources:317 - Releasing JDBC resources
+[2021-06-03 22:04:26.323] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:257 - Closing logical connection
+[2021-06-03 22:04:26.323] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:264 - Logical connection closed
+[2021-06-03 22:04:26.511] [omar-desktop] [main] TRACE o.h.i.SessionFactoryImpl$SessionBuilderImpl@openSession:1281 - Opening Hibernate Session.  tenant=null
+[2021-06-03 22:04:26.511] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@<init>:270 - Opened Session [608524b5-00d6-4234-9ac0-ff796f1f87d7] at timestamp: 1622754266511
+[2021-06-03 22:04:26.511] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@closeWithoutOpenChecks:366 - Closing session [608524b5-00d6-4234-9ac0-ff796f1f87d7]
+[2021-06-03 22:04:26.512] [omar-desktop] [main] TRACE o.h.e.j.internal.JdbcCoordinatorImpl@close:166 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@65fa4a07]
+[2021-06-03 22:04:26.512] [omar-desktop] [main] TRACE o.h.r.j.i.ResourceRegistryStandardImpl@releaseResources:317 - Releasing JDBC resources
+[2021-06-03 22:04:26.512] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:257 - Closing logical connection
+[2021-06-03 22:04:26.512] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:264 - Logical connection closed
+[2021-06-03 22:04:26.645] [omar-desktop] [main] TRACE o.h.i.SessionFactoryImpl$SessionBuilderImpl@openSession:1281 - Opening Hibernate Session.  tenant=null
+[2021-06-03 22:04:26.646] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@<init>:270 - Opened Session [17156cee-e2a3-49a9-86c4-57d3481101f3] at timestamp: 1622754266645
+[2021-06-03 22:04:26.650] [omar-desktop] [main] DEBUG o.h.e.t.internal.TransactionImpl@<init>:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2021-06-03 22:04:26.650] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@closeWithoutOpenChecks:366 - Closing session [17156cee-e2a3-49a9-86c4-57d3481101f3]
+[2021-06-03 22:04:26.650] [omar-desktop] [main] TRACE o.h.e.j.internal.JdbcCoordinatorImpl@close:166 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@2190508d]
+[2021-06-03 22:04:26.651] [omar-desktop] [main] TRACE o.h.r.j.i.ResourceRegistryStandardImpl@releaseResources:317 - Releasing JDBC resources
+[2021-06-03 22:04:26.651] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:257 - Closing logical connection
+[2021-06-03 22:04:26.651] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:264 - Logical connection closed
+[2021-06-03 22:04:26.653] [omar-desktop] [main] TRACE o.h.i.SessionFactoryImpl$SessionBuilderImpl@openSession:1281 - Opening Hibernate Session.  tenant=null
+[2021-06-03 22:04:26.654] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@<init>:270 - Opened Session [c813704b-e7fa-47b6-97b7-30657f849ea0] at timestamp: 1622754266653
+[2021-06-03 22:04:26.655] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@closeWithoutOpenChecks:366 - Closing session [c813704b-e7fa-47b6-97b7-30657f849ea0]
+[2021-06-03 22:04:26.655] [omar-desktop] [main] TRACE o.h.e.j.internal.JdbcCoordinatorImpl@close:166 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@4866a755]
+[2021-06-03 22:04:26.656] [omar-desktop] [main] TRACE o.h.r.j.i.ResourceRegistryStandardImpl@releaseResources:317 - Releasing JDBC resources
+[2021-06-03 22:04:26.656] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:257 - Closing logical connection
+[2021-06-03 22:04:26.656] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:264 - Logical connection closed
+[2021-06-03 22:04:26.723] [omar-desktop] [main] TRACE o.h.i.SessionFactoryImpl$SessionBuilderImpl@openSession:1281 - Opening Hibernate Session.  tenant=null
+[2021-06-03 22:04:26.723] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@<init>:270 - Opened Session [d458172a-8901-4166-8a9b-23b73f7d29b6] at timestamp: 1622754266723
+[2021-06-03 22:04:26.723] [omar-desktop] [main] DEBUG o.h.e.t.internal.TransactionImpl@<init>:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2021-06-03 22:04:26.723] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@closeWithoutOpenChecks:366 - Closing session [d458172a-8901-4166-8a9b-23b73f7d29b6]
+[2021-06-03 22:04:26.724] [omar-desktop] [main] TRACE o.h.e.j.internal.JdbcCoordinatorImpl@close:166 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@63896cf7]
+[2021-06-03 22:04:26.724] [omar-desktop] [main] TRACE o.h.r.j.i.ResourceRegistryStandardImpl@releaseResources:317 - Releasing JDBC resources
+[2021-06-03 22:04:26.724] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:257 - Closing logical connection
+[2021-06-03 22:04:26.724] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:264 - Logical connection closed
+[2021-06-03 22:04:26.725] [omar-desktop] [main] TRACE o.h.i.SessionFactoryImpl$SessionBuilderImpl@openSession:1281 - Opening Hibernate Session.  tenant=null
+[2021-06-03 22:04:26.725] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@<init>:270 - Opened Session [b2d6a0be-b7a2-443b-b574-0d45273512ce] at timestamp: 1622754266725
+[2021-06-03 22:04:26.725] [omar-desktop] [main] TRACE org.hibernate.internal.SessionImpl@closeWithoutOpenChecks:366 - Closing session [b2d6a0be-b7a2-443b-b574-0d45273512ce]
+[2021-06-03 22:04:26.725] [omar-desktop] [main] TRACE o.h.e.j.internal.JdbcCoordinatorImpl@close:166 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@3f838072]
+[2021-06-03 22:04:26.726] [omar-desktop] [main] TRACE o.h.r.j.i.ResourceRegistryStandardImpl@releaseResources:317 - Releasing JDBC resources
+[2021-06-03 22:04:26.726] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:257 - Closing logical connection
+[2021-06-03 22:04:26.726] [omar-desktop] [main] TRACE o.h.r.j.i.LogicalConnectionManagedImpl@close:264 - Logical connection closed
+[2021-06-03 22:04:27.005] [omar-desktop] [main] WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration@openEntityManagerInViewInterceptor:221 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-06-03 22:04:27.290] [omar-desktop] [main] INFO o.s.s.c.ThreadPoolTaskExecutor@initialize:181 - Initializing ExecutorService 'applicationTaskExecutor'
+[2021-06-03 22:04:27.925] [omar-desktop] [main] INFO o.s.s.c.ThreadPoolTaskScheduler@initialize:181 - Initializing ExecutorService 'taskScheduler'
+[2021-06-03 22:04:27.951] [omar-desktop] [main] INFO o.s.b.a.e.web.EndpointLinksResolver@<init>:58 - Exposing 2 endpoint(s) beneath base path '/actuator'
+[2021-06-03 22:04:28.029] [omar-desktop] [main] INFO o.a.coyote.http11.Http11NioProtocol@log:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2021-06-03 22:04:28.059] [omar-desktop] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2021-06-03 22:04:28.153] [omar-desktop] [main] INFO c.a.e.EmployeemanagerApplication@logStarted:61 - Started EmployeemanagerApplication in 10.73 seconds (JVM running for 14.33)
+[2021-06-03 22:04:28.491] [omar-desktop] [RMI TCP Connection(3)-127.0.0.1] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-06-03 22:04:28.497] [omar-desktop] [RMI TCP Connection(3)-127.0.0.1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+[2021-06-03 22:04:28.501] [omar-desktop] [RMI TCP Connection(3)-127.0.0.1] INFO o.s.web.servlet.DispatcherServlet@initServletBean:547 - Completed initialization in 4 ms
+[2021-06-03 22:04:34.140] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - hikaricp.connections = [MeasurementSample{statistic=VALUE, value=10.0}]
+[2021-06-03 22:04:34.143] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - hikaricp.connections.acquire = [MeasurementSample{statistic=COUNT, value=2.0}, MeasurementSample{statistic=TOTAL_TIME, value=0.008759094}, MeasurementSample{statistic=MAX, value=0.008736706}]
+[2021-06-03 22:04:34.145] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - hikaricp.connections.active = [MeasurementSample{statistic=VALUE, value=0.0}]
+[2021-06-03 22:04:34.147] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - hikaricp.connections.creation = [MeasurementSample{statistic=COUNT, value=0.0}, MeasurementSample{statistic=TOTAL_TIME, value=0.0}, MeasurementSample{statistic=MAX, value=0.0}]
+[2021-06-03 22:04:34.148] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - hikaricp.connections.idle = [MeasurementSample{statistic=VALUE, value=10.0}]
+[2021-06-03 22:04:34.150] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - hikaricp.connections.max = [MeasurementSample{statistic=VALUE, value=10.0}]
+[2021-06-03 22:04:34.151] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - hikaricp.connections.min = [MeasurementSample{statistic=VALUE, value=10.0}]
+[2021-06-03 22:04:34.152] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - hikaricp.connections.pending = [MeasurementSample{statistic=VALUE, value=0.0}]
+[2021-06-03 22:04:34.154] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - hikaricp.connections.timeout = [MeasurementSample{statistic=COUNT, value=0.0}]
+[2021-06-03 22:04:34.156] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - hikaricp.connections.usage = [MeasurementSample{statistic=COUNT, value=2.0}, MeasurementSample{statistic=TOTAL_TIME, value=0.004}, MeasurementSample{statistic=MAX, value=0.004}]
+[2021-06-03 22:04:34.158] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jdbc.connections.active = [MeasurementSample{statistic=VALUE, value=0.0}]
+[2021-06-03 22:04:34.160] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jdbc.connections.idle = [MeasurementSample{statistic=VALUE, value=10.0}]
+[2021-06-03 22:04:34.160] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jdbc.connections.max = [MeasurementSample{statistic=VALUE, value=10.0}]
+[2021-06-03 22:04:34.161] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jdbc.connections.min = [MeasurementSample{statistic=VALUE, value=10.0}]
+[2021-06-03 22:04:34.162] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.buffer.count = [MeasurementSample{statistic=VALUE, value=0.0}]
+[2021-06-03 22:04:34.167] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.buffer.memory.used = [MeasurementSample{statistic=VALUE, value=0.0}]
+[2021-06-03 22:04:34.168] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.buffer.total.capacity = [MeasurementSample{statistic=VALUE, value=0.0}]
+[2021-06-03 22:04:34.169] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.classes.loaded = [MeasurementSample{statistic=VALUE, value=12402.0}]
+[2021-06-03 22:04:34.171] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.classes.unloaded = [MeasurementSample{statistic=COUNT, value=0.0}]
+[2021-06-03 22:04:34.171] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.gc.live.data.size = [MeasurementSample{statistic=VALUE, value=0.0}]
+[2021-06-03 22:04:34.173] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.gc.max.data.size = [MeasurementSample{statistic=VALUE, value=4.133486592E9}]
+[2021-06-03 22:04:34.174] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.gc.memory.allocated = [MeasurementSample{statistic=COUNT, value=2.10763776E8}]
+[2021-06-03 22:04:34.174] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.gc.memory.promoted = [MeasurementSample{statistic=COUNT, value=6405736.0}]
+[2021-06-03 22:04:34.177] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.gc.pause = [MeasurementSample{statistic=COUNT, value=2.0}, MeasurementSample{statistic=TOTAL_TIME, value=0.187}, MeasurementSample{statistic=MAX, value=0.13}]
+[2021-06-03 22:04:34.178] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.memory.committed = [MeasurementSample{statistic=VALUE, value=4.02829312E8}]
+[2021-06-03 22:04:34.184] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.memory.max = [MeasurementSample{statistic=VALUE, value=5.458886653E9}]
+[2021-06-03 22:04:34.185] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.memory.used = [MeasurementSample{statistic=VALUE, value=1.96129792E8}]
+[2021-06-03 22:04:34.185] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.threads.daemon = [MeasurementSample{statistic=VALUE, value=29.0}]
+[2021-06-03 22:04:34.188] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.threads.live = [MeasurementSample{statistic=VALUE, value=34.0}]
+[2021-06-03 22:04:34.188] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.threads.peak = [MeasurementSample{statistic=VALUE, value=37.0}]
+[2021-06-03 22:04:34.193] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - jvm.threads.states = [MeasurementSample{statistic=VALUE, value=34.0}]
+[2021-06-03 22:04:34.194] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - logback.events = [MeasurementSample{statistic=COUNT, value=547.0}]
+[2021-06-03 22:04:34.194] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - process.cpu.usage = [MeasurementSample{statistic=VALUE, value=0.0}]
+[2021-06-03 22:04:34.195] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - process.files.max = [MeasurementSample{statistic=VALUE, value=1048576.0}]
+[2021-06-03 22:04:34.202] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - process.files.open = [MeasurementSample{statistic=VALUE, value=103.0}]
+[2021-06-03 22:04:34.203] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - process.start.time = [MeasurementSample{statistic=VALUE, value=1.622754253894E9}]
+[2021-06-03 22:04:34.203] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - process.uptime = [MeasurementSample{statistic=VALUE, value=20.38}]
+[2021-06-03 22:04:34.204] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - system.cpu.count = [MeasurementSample{statistic=VALUE, value=4.0}]
+[2021-06-03 22:04:34.205] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - system.cpu.usage = [MeasurementSample{statistic=VALUE, value=1.0}]
+[2021-06-03 22:04:34.205] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - system.load.average.1m = [MeasurementSample{statistic=VALUE, value=4.68}]
+[2021-06-03 22:04:34.206] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - tomcat.sessions.active.current = [MeasurementSample{statistic=VALUE, value=0.0}]
+[2021-06-03 22:04:34.206] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - tomcat.sessions.active.max = [MeasurementSample{statistic=VALUE, value=0.0}]
+[2021-06-03 22:04:34.207] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - tomcat.sessions.alive.max = [MeasurementSample{statistic=VALUE, value=0.0}]
+[2021-06-03 22:04:34.207] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - tomcat.sessions.created = [MeasurementSample{statistic=COUNT, value=0.0}]
+[2021-06-03 22:04:34.207] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - tomcat.sessions.expired = [MeasurementSample{statistic=COUNT, value=0.0}]
+[2021-06-03 22:04:34.208] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchMetrics$0:33 - tomcat.sessions.rejected = [MeasurementSample{statistic=COUNT, value=0.0}]
+[2021-06-03 22:04:34.218] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchInfo$1:40 - app = {name=employeemanager, description=Employee manager App, version=0.0.1-SNAPSHOT, encoding=UTF-8, java={version=11.0.11}}
+[2021-06-03 22:05:34.221] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchInfo$1:40 - app = {name=employeemanager, description=Employee manager App, version=0.0.1-SNAPSHOT, encoding=UTF-8, java={version=11.0.11}}
+[2021-06-03 22:06:34.223] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchInfo$1:40 - app = {name=employeemanager, description=Employee manager App, version=0.0.1-SNAPSHOT, encoding=UTF-8, java={version=11.0.11}}
+[2021-06-03 22:07:34.225] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchInfo$1:40 - app = {name=employeemanager, description=Employee manager App, version=0.0.1-SNAPSHOT, encoding=UTF-8, java={version=11.0.11}}
+[2021-06-03 22:08:34.227] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchInfo$1:40 - app = {name=employeemanager, description=Employee manager App, version=0.0.1-SNAPSHOT, encoding=UTF-8, java={version=11.0.11}}
+[2021-06-03 22:09:34.229] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchInfo$1:40 - app = {name=employeemanager, description=Employee manager App, version=0.0.1-SNAPSHOT, encoding=UTF-8, java={version=11.0.11}}
+[2021-06-03 22:10:34.231] [omar-desktop] [scheduling-1] INFO c.a.e.service.ActuatorMetricsService@lambda$fetchInfo$1:40 - app = {name=employeemanager, description=Employee manager App, version=0.0.1-SNAPSHOT, encoding=UTF-8, java={version=11.0.11}}
+[2021-06-03 22:11:01.648] [omar-desktop] [SpringContextShutdownHook] INFO o.s.s.c.ThreadPoolTaskScheduler@shutdown:218 - Shutting down ExecutorService 'taskScheduler'
+[2021-06-03 22:11:01.650] [omar-desktop] [SpringContextShutdownHook] INFO o.s.s.c.ThreadPoolTaskExecutor@shutdown:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+[2021-06-03 22:11:01.651] [omar-desktop] [SpringContextShutdownHook] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean@destroy:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-06-03 22:11:01.651] [omar-desktop] [SpringContextShutdownHook] DEBUG o.h.internal.SessionFactoryImpl@close:792 - HHH000031: Closing
+[2021-06-03 22:11:01.651] [omar-desktop] [SpringContextShutdownHook] TRACE o.h.engine.query.spi.QueryPlanCache@cleanup:252 - Cleaning QueryPlan Cache
+[2021-06-03 22:11:01.651] [omar-desktop] [SpringContextShutdownHook] TRACE o.h.type.spi.TypeConfiguration$Scope@sessionFactoryClosed:211 - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@7e9a836] for TypeConfiguration
+[2021-06-03 22:11:01.651] [omar-desktop] [SpringContextShutdownHook] DEBUG o.h.type.spi.TypeConfiguration$Scope@unsetSessionFactory:350 - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@77792ab9] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@7e9a836]
+[2021-06-03 22:11:01.653] [omar-desktop] [SpringContextShutdownHook] DEBUG o.h.s.i.AbstractServiceRegistryImpl@deRegisterChild:419 - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+[2021-06-03 22:11:01.653] [omar-desktop] [SpringContextShutdownHook] DEBUG o.h.b.r.i.BootstrapServiceRegistryImpl@deRegisterChild:295 - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+[2021-06-03 22:11:01.655] [omar-desktop] [SpringContextShutdownHook] INFO com.zaxxer.hikari.HikariDataSource@close:350 - HikariPool-1 - Shutdown initiated...
+[2021-06-03 22:11:01.676] [omar-desktop] [SpringContextShutdownHook] INFO com.zaxxer.hikari.HikariDataSource@close:352 - HikariPool-1 - Shutdown completed.
